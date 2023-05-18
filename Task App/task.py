@@ -11,14 +11,14 @@ class Task:
 
     id = 1
     def __init__(self,taskname,status):
-        self.sno = Task.id
-        self.taskname = taskname
-        self.status = (status)
+        sno = Task.id
+        taskname = taskname
+        status = (status)
         Task.id += 1
         TaskList.append(self)
 
     def setstatus(self,status):
-        self.status = (status)
+        status = (status)
 
     def __delattr__(self):
         pass
